@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exploring the Amazon Rainforest</title>
+    <meta name="description" content="Your guide for things to do in the Amazon Rainforest">
+
+    <style>
+        #sect1 {
+            background-color: darkgreen;
+        }
+
+        #sect2 {
+            background-color: gold;
+        }
+
+        #sect3 {
+            background-color: greenyellow;
+        }
+
+        #sect4 {
+            background-color: seagreen;
+        }
+
+        #sect5 {
+            background-color: teal;
+        }
+
+        #slider {
+            overflow: hidden;
+        }
+
+        #slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+
+        #slider figure img {
+            float: left;
+            width: 20%;
+        }
+
+@keyframes slider {
+    0% {
+        left: 0;
+        } 
+
+    20% {
+        left: 0;
+        }
+
+    25% {
+        left: -100%;
+        }
+
+    45% {
+        left: -100%;
+        }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300;
+    }
+
+    100% {
+        left: -400;
+    }
+}
+
+.container {
+    column-count: 1;
+}
+
+@media (min-width: 576px) {
+    .container {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        column-count: 4;
+    }
+}
+    
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section id="sect1" >
+            <header>
+                <h1 style="color: gold;" >Exploring the Amazon Rainforest</h1>
+                <img src="Rainforest.jpeg" title="Rainforest" alt="This is the Amazon Rainforest" width="300" height="300">
+                <h1 style="color:aqua;">About Brazil</h1>
+                <img src="River.jpeg" title="River" alt="A river in the Amazon Rainforest" width="300" height="300">
+                    <p>
+                        Brazil is the largest country in South America and the 
+                        fifth largest nation in the world. It forms an enormous triangle on the eastern side of the continent with a 4,500 mile
+                        (7,400 kilometer) coastline along the Atlantic Ocean. It has borders with every South American country
+                        except Chile and Ecuador. 
+                    </p>
+    
+                    <p>
+                        The Brazilian landscape is very varied. It is most well known for its dense forests,
+                        including the Amazon, the world's largest jungle, in the north. But there are also 
+                        dry grasslands (called pampas), rugged hills, pine forests, sprawling wetlands and 
+                        a long coastal plains. 
+                    </p>
+                    <div id="slider">
+                        <figure>
+                            <img src="Traveling.jpeg" title="Traveling" width="300" height="300">
+                            <img src="Fishing.jpeg" title="Traveling" width="300" height="300">
+                            <img src="Rain.jpeg" title="Rain" width="300" height="300">
+                            <img src="Airport.jpeg" title="Airport" width="300" height="300">
+                            <img src="Christ.jpeg" title="Christ" width="300" height="300">
+                        </figure>
+                    </div>
+            </header>
+        </section>
+
+        <section id="sect2">
+            <header>
+                <h1 style="color:black;">Airports in Brazil</h1>
+                <img src="Airport.jpeg" title="Airport" alt="Airport that can be found in Brazil" width="200" height="200" align="right">
+                    <p>
+                        There are major airports one can arrive if you are a foreigner. 
+                        The major airports are:
+                            <ul>
+                                <li>Sao Paulo International Airport</li>
+                                <li>Rio de Janiero Airport</li>
+                                <li>Brasilia Airport</li>
+                                <li>Santos Dumont Airport</li>
+                                <li>Deputado Luis Eduardo</li>
+                            </ul>
+                    </p>
+            </header>
+        </section>
+
+        <section id="sect3">
+            <header>
+                <h1 style="color:darkcyan;">What to do in the Amazon Rainforest</h1>
+                    <h3 style="color:darkcyan;">Hiking</h3>
+                    <img src="Hiking.jpeg" title="Hiking" alt="Hiking in the Amazon" width="300" height="300">
+                        <p>
+                            The amazon rainforest covers about 6.7 million
+                            square kilometers. To put in perspective, it is roughly
+                            about 48 connected states in the United States. 
+                        </p>
+
+                    <h3 style="color:darkcyan;">Exploring</h3>
+                    <img src="Exploring.jpeg" title="Exploring" alt="Exploring the Amazon" width="300" height="300">
+                        <p>
+                            If no one wants to explore the entire jungle, they would need approximately,
+                            869 days! In total, that is about two years and fourt months. 
+                        </p>
+                        
+                    <h3 style="color:darkcyan;">Fishing</h3>
+                    <img src="Fishing.jpeg" title="Fishing" alt="Fishing in the Amazon" width="400" height="300">
+                        <p>
+                            The Amazon rainforest is known for its vast biodiversity and environment. There are about
+                            3,000 species of fish in the Amazon which is great for fishing! 
+                        </p>
+            </header>
+        </section>
+
+        <section id="sect4">
+            <header>
+                <h1 style="color:aqua;">Amazon Travel Packages</h1>
+                    <h3 style="color:aqua;">First package</h3>
+                    <img src="Christ.jpeg" title="Christ" alt="Christ the redeemer in Brazil" width="300" height="300">
+                        <p>This package is perfect for the first timers who need much
+                            guidance in traveling the forest! $5,000
+                        </p>
+                    <h3 style="color:aqua;">Second package</h3>
+                    <img src="Traveling.jpeg" title="Traveling" alt="Traveling in the Amazon" width="300" height="300">
+                        <p>This package is perfect for experienced travelers who have
+                            completed the first package. $7,000
+                        </p>
+                    <h3 style="color:aqua;">Third package</h3>
+                    <img src="Rain.jpeg" title="Rain" alt="Rain in the amazon" width="300" height="300">
+                        <p>This package is perfect for thrill seekers who have traveled
+                            to the rainforest on several occasions. This package
+                            is for those who want to travel even further. $10,000
+                        </p>
+
+            </header>
+        </section>
+
+        <section id="sect5">
+            <header>
+                <h1 style="color:aqua;">AMAZON</h1>
+                    <h3 style="color: white;">Reservations office</h3>
+                        <p>123 Anywhere street., <br />
+                            Any City ST 12345 <br />
+                            123-45-6789 <br />
+                            hello@reallygreatsite.com
+                        </p>
+                    <h3 style="color: white;">Office hours</h3>
+                        <p>MONDAY TO FRIDAY <br />
+                            9:00 am to 6:00 pm <br />
+                            SATURDAY<br />
+                            9:00 am to 12:00 noon
+                        </p>
+            </header>
+        </section>
+        
+    </main>
+    <footer>
+        <small>
+          Copyright © 2024 All Rights Reserved.
+        </small>
+      </footer>
+</body>
