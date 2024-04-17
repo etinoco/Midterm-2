@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <title>Exploring the Amazon Rainforest</title>
     <meta name="description" content="Your guide for things to do in the Amazon Rainforest">
 
@@ -62,77 +65,15 @@
             color:aqua;
         }
 
-        #slider {
-            overflow: hidden;
-        }
+     
 
-        #slider figure {
-            position: relative;
-            width: 500%;
-            margin: 0;
-            left: 0;
-            animation: 20s slider infinite;
-        }
 
-        #slider figure img {
-            float: left;
-            width: 20%;
-        }
 
-@keyframes slider {
-    0% {
-        left: 0;
-        } 
-
-    20% {
-        left: 0;
-        }
-
-    25% {
-        left: -100%;
-        }
-
-    45% {
-        left: -100%;
-        }
-
-    50% {
-        left: -200%;
-    }
-
-    70% {
-        left: -200;
-    }
-
-    75% {
-        left: -300%;
-    }
-
-    95% {
-        left: -300;
-    }
-
-    100% {
-        left: -400;
-    }
-}
-
-.container {
-    column-count: 1;
-}
-
-@media (min-width: 576px) {
-    .container {
-        column-count: 2;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        column-count: 4;
-    }
-}
     
+.carousel-item img {
+            height: 200px;
+            object-fit: fill;
+        }
     </style>
 </head>
 
@@ -141,39 +82,63 @@
     <main>
         <section id="sect1" >
             <header>
-                <h1 id="head1">Exploring the Amazon Rainforest</h1>
-                <img src="Rainforest.jpeg" title="Rainforest" alt="This is the Amazon Rainforest" width="300" height="300">
-                <h2 id="head2">About Brazil</h2>
-                <img src="River.jpeg" title="River" alt="A river in the Amazon Rainforest" width="300" height="300">
+                <div class="container">
+                    <h1 id="head1">Exploring the Amazon Rainforest</h1>
+                    <img src="img/Rainforest.jpeg" title="Rainforest" alt="This is the Amazon Rainforest" width="200" height="200">
+                    <h2 id="head2">About Brazil</h2>
+                    <img src="img/River.jpeg" title="River" alt="A river in the Amazon Rainforest" width="200" height="200">
                     <p>
-                        Brazil is the largest country in South America and the 
-                        fifth largest nation in the world. It forms an enormous triangle on the eastern side of the continent with a 4,500 mile
-                        (7,400 kilometer) coastline along the Atlantic Ocean. It has borders with every South American country
-                        except Chile and Ecuador. 
+                      Brazil is the largest country in South America and the 
+                      fifth largest nation in the world. It forms an enormous triangle on the eastern side of the continent with a 4,500 mile
+                      (7,400 kilometer) coastline along the Atlantic Ocean. It has borders with every South American country
+                      except Chile and Ecuador. 
                     </p>
-    
                     <p>
-                        The Brazilian landscape is very varied. It is most well known for its dense forests,
-                        including the Amazon, the world's largest jungle, in the north. But there are also 
-                        dry grasslands (called pampas), rugged hills, pine forests, sprawling wetlands and 
-                        a long coastal plains. 
+                      The Brazilian landscape is very varied. It is most well known for its dense forests,
+                      including the Amazon, the world's largest jungle, in the north. But there are also 
+                      dry grasslands (called pampas), rugged hills, pine forests, sprawling wetlands and 
+                      a long coastal plains. 
                     </p>
-                    <div id="slider">
-                        <figure>
-                            <img src="Traveling.jpeg" title="Traveling" width="100" height="200">
-                            <img src="Fishing.jpeg" title="Traveling" width="100" height="200">
-                            <img src="Rain.jpeg" title="Rain" width="100" height="200">
-                            <img src="Airport.jpeg" title="Airport" width="100" height="200">
-                            <img src="Christ.jpeg" title="Christ" width="100" height="200">
-                        </figure>
-                    </div>
+                  </div>
+                    <div class="background-container">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-6">
+                            </div>
+                            <div class="col-md-6 browser-image-container" style="margin-left: -570px;">
+                              <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="img/Rainforest.jpeg" class="d-block w-100" alt="Slide 1" width="300" height="300">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/Traveling.jpeg" class="d-block w-100" alt="Slide 2" width="300" height="300">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/Christ.jpeg" class="d-block w-100" alt="Slide 3" width="300" height="300">
+                                  </div>
+                                  <!-- arrows to move pictures -->
+                                </div>
+                                <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                            </div>     
+                          </div>
+                        </div>
+                      </div>
             </header>
         </section>
 
         <section id="sect2">
             <header>
                 <h2>Airports in Brazil</h2>
-                <img src="Airport.jpeg" title="Airport" alt="Airport that can be found in Brazil" width="200" height="125" align="right">
+                <img src="img/Airport.jpeg" title="Airport" alt="Airport that can be found in Brazil" width="200" height="125" align="right">
                     <p>
                         There are major airports one can arrive if you are a foreigner. 
                         The major airports are:
@@ -192,7 +157,7 @@
             <header>
                 <h2>What to do in the Amazon Rainforest</h2>
                     <h3>Hiking</h3>
-                    <img src="Hiking.jpeg" title="Hiking" alt="Hiking in the Amazon" width="300" height="300">
+                    <img src="img/Hiking.jpeg" title="Hiking" alt="Hiking in the Amazon" width="300" height="300">
                         <p>
                             The amazon rainforest covers about 6.7 million
                             square kilometers. To put in perspective, it is roughly
@@ -200,14 +165,14 @@
                         </p>
 
                     <h3>Exploring</h3>
-                    <img src="Exploring.jpeg" title="Exploring" alt="Exploring the Amazon" width="300" height="300">
+                    <img src="img/Exploring.jpeg" title="Exploring" alt="Exploring the Amazon" width="300" height="300">
                         <p>
                             If no one wants to explore the entire jungle, they would need approximately,
                             869 days! In total, that is about two years and fourt months. 
                         </p>
                         
                     <h3>Fishing</h3>
-                    <img src="Fishing.jpeg" title="Fishing" alt="Fishing in the Amazon" width="400" height="300">
+                    <img src="img/Fishing.jpeg" title="Fishing" alt="Fishing in the Amazon" width="400" height="300">
                         <p>
                             The Amazon rainforest is known for its vast biodiversity and environment. There are about
                             3,000 species of fish in the Amazon which is great for fishing! 
@@ -219,17 +184,17 @@
             <header>
                 <h2>Amazon Travel Packages</h2>
                     <h3>First package</h3>
-                    <img src="Christ.jpeg" title="Christ" alt="Christ the redeemer in Brazil" width="300" height="300">
+                    <img src="img/Christ.jpeg" title="Christ" alt="Christ the redeemer in Brazil" width="300" height="300">
                         <p>This package is perfect for the first timers who need much
                             guidance in traveling the forest! $5,000
                         </p>
                     <h3>Second package</h3>
-                    <img src="Traveling.jpeg" title="Traveling" alt="Traveling in the Amazon" width="300" height="300">
+                    <img src="img/Traveling.jpeg" title="Traveling" alt="Traveling in the Amazon" width="300" height="300">
                         <p>This package is perfect for experienced travelers who have
                             completed the first package. $7,000
                         </p>
                     <h3>Third package</h3>
-                    <img src="Rain.jpeg" title="Rain" alt="Rain in the amazon" width="300" height="300">
+                    <img src="img/Rain.jpeg" title="Rain" alt="Rain in the amazon" width="300" height="300">
                         <p>This package is perfect for thrill seekers who have traveled
                             to the rainforest on several occasions. This package
                             is for those who want to travel even further. $10,000
@@ -257,6 +222,7 @@
         </section>
         
     </main>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <footer>
         <small>
           Copyright © 2024 All Rights Reserved.
